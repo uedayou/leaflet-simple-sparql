@@ -10,7 +10,7 @@ geo:long ?long.
 limit 1000
 */}).toString().match(/\n([\s\S]*)\n/)[1];
 
-var maxZoom = 30;
+var maxZoom = 19;
 var baseUrl = "http://j.tile.openstreetmap.jp/{z}/{x}/{y}.png";
 var baseAttribution = 'Map data &copy; OpenStreetMap contributors, Tiles Courtesy of OpenStreetMap Japan';
 var subdomains = '1234';
