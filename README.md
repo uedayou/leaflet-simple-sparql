@@ -39,6 +39,11 @@ SPARQLエンドポイントは、CORS(Cross-Origin Resource Sharing)に対応し
 - [bootstrap-modal]
 - [SPARQL Timeliner]
 
+## 注意
+
+config.js は必ず UTF8 で保存してください。
+サーバによっては、SPARQLクエリに2つ以上の空白またはタブ文字が入るとエラーが起こる可能性あります。
+
 
 [leaflet-simple-csv]:https://github.com/perrygeo/leaflet-simple-csv
 [leaflet]:http://leafletjs.com/
