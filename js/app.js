@@ -26,6 +26,9 @@ var points = L.geoJson(null, {
             if (title == labelColumn) {
                 layer.bindLabel(feature.properties[clave], {className: 'map-label'});
             }
+            if (typeof attr === 'string' && attr.indexOf('http') === 0 && attr.indexOf(".jpg") > 0) {
+                attr = '<a target="_blank" href="' + attr + '"><img src="'+attr+'" style="width:100%;" /></a>';
+            }
             if (typeof attr === 'string' && attr.indexOf('http') === 0) {
                 attr = '<a target="_blank" href="' + attr + '">'+ attr + '</a>';
             }
